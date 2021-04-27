@@ -1,0 +1,55 @@
+div {
+    height: 80px;
+    margin: 0px;
+    color: #000;
+    border: 1px solid #000;
+    background-color: #c2f2cf;
+  }
+  p {
+    margin: 0; /* remove default margins */
+  }
+  
+  /* Position approach */
+  .absolute {
+    position: relative;
+  }
+  
+  .absolute p {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+  
+  /* Display Table */
+  .table {
+    display: table;
+    width: 100%;
+  }
+  .table p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  /* flex box approach*/
+  .flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* grid approach*/
+  .grid {
+    display: grid;
+    place-content: center;
+  }
+  
+  /* flexbox with margin approach*/
+  .marginsgrid {
+    display: flex;
+  }
+  .marginsgrid p {
+    margin: auto;
+  }
+  
